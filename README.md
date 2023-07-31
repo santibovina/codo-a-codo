@@ -1,7 +1,7 @@
 <image src="banner.png">
 
 # Programa Codo a Codo brindado por el Gobierno de Buenos Aires.
-# Full stack Python
+## Full stack Python
 
 ·Python<br>
 ·HTML<br>
