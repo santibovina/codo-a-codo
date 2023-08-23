@@ -1,8 +1,8 @@
 # Formularios y etiquetas semánticas
 
-"<header></header>"
-"<nav></nav>"
-"<main></main>"
-"<section></section>"
-"<footer></footer>"
+[<header>]
+"<nav>"
+"<main>"
+"<section>"
+"<footer>"
 "<a href="#">Ir arriba</a>"
