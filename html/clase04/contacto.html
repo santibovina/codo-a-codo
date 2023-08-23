@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 4 - Formularios y Etiquetas Semánticas</title>
+    <link rel="icon" href="/img/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img src="/img/slide.jfif" alt="vista Buenos Aires" width="100%">
+        <nav>
+            <a href="/clase-04.html">Inicio |</a>
+            <a href="/contacto.html">Contacto |</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Buenos Aires</h1>
+            <h3>Formulario de Contacto</h3>
+        </section>
+
+        <section>
+            <form action="">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+
+                    <!--Nombre-->
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+                    <br><br>
+
+                    <!--Apellido-->
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido" required>
+                    <br><br>
+
+                    <!--DNI-->
+                    <label for="DNI">DNI: </label>
+                    <input type="text" name="dni" id="dni" placeholder="Ingrese su DNI" size="10" maxlength="8">
+                    <br><br>
+
+                    <!--Fecha nacimiento-->
+                    <label for="fecha_nacimiento">Fecha de Nacimiento: </label>
+                    <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" min="1987-01-01" max="2023-08-16">
+                    <br><br>
+
+                    <!--Hijos-->
+                    <label for="hijos">Cantidad de Hijos: </label>
+                    <input type="number" name="hijos" id="hijos" size="4" min="0" max="10">
+                    <br><br>
+
+                    <!--Mail-->
+                    <label for="mail">Mail: </label>
+                    <input type="email">
+                    <br><br>
+
+                    <!--Adjuntar archivo-->
+                    <label for="adjunto">Adjuntar archivo: </label>
+                    <input type="file" name="adjunto" id="adjunto">
+                    <br>
+
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Datos para la Inscripción</legend>
+                    <label for="turno" id="turno">Seleccionar turno: </label>
+                    <select name="turno" id="turno">
+                        <option value="vacio"></option>
+                        <option value="1">Mañana</option>
+                        <option value="2">Tarde</option>
+                        <option value="3">Vespertino</option>
+                        <option value="4">Noche</option>
+                    </select>
+                    <br>
+
+                    <label for="conocimientos">Conocimientos:</label>
+                    <input type="checkbox" name="html" id="html">HTML
+                    <input type="checkbox" name="JavaScript" id="js">JavaScript
+                    <input type="checkbox" name="python" id="python">Python
+                    <br>
+
+                    <label for="interes">Tengo interés en:</label>
+                    <input type="radio" name="interes" id="A">Fullstack Python
+                    <input type="radio" name="interes" id="B">Fullstack JS
+                    <input type="radio" name="interes" id="C">Fullstack PHP
+                    <br>
+
+                    <!--Comentarios-->
+                    <label for="comentarios">Comentarios:</label>
+                    <br>
+                    <textarea name="comentarios" id="comentarios" cols="40" rows="5"></textarea>
+
+                </fieldset>
+
+                <!--Botones-->
+                <input type="submit" value="Enviar formulario">
+                <input type="reset" value="Borrar">
+
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <h4>😎 2023 Codo a Codo. Todos los derechos reservados </h4>
+    </footer>
+
+</body>
+
+</html>
